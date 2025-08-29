@@ -1,0 +1,296 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #9fe5ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.dino {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 400px;
+  left: 200px;
+}
+
+.score {
+  font-family: pixelfont;
+  font-size: 50px;
+  color: #dc8d05;
+  position: fixed;
+  left: 1300px;
+  top: 40px;
+}
+.body {
+  width: 100px;
+  height: 80px;
+  background-color: #0586dc;
+  position: relative;
+  left: 00px;
+  top: -40px;
+  border-radius: 25px;
+}
+
+.pos1 {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.pos2 {
+  position: relative;
+  top: 0px;
+  left: 60px;
+}
+
+.eyes {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.leg  {
+  width: 20px;
+  height: 20px;
+  background-color: #0586dc;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.leg1 {
+  position: relative;
+  left: 20px;
+  top: 81px;
+  animation: upDown .25s linear infinite;
+}
+
+.leg2 {
+  position: relative;
+  top: 61px;
+  left: 60px;
+  animation: upDown .25s linear infinite;
+}
+
+.tree {
+  width: 140px;
+  height: 150px;
+  position: relative;
+  left: 0px;
+  top: -40px;
+}
+
+.leaves {
+  width: 160px;
+  height: 160px;
+}
+
+.leaf1 {
+  position: relative;
+  background-color: #05dc0f;
+  border-radius: 50px;
+  top: -20px;
+  width: 100px;
+  height: 100px;
+}
+
+.leaf2 {
+  position: relative;
+  background-color: #05dc0f;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+  top: -140px;
+  left: 50px;
+}
+.leaf3 {
+  position: relative;
+  background-color: #05dc0f;
+  border-radius: 50px;
+  width: 90px;
+  height: 90px;
+  top: -170px;
+  left: 70px;
+}
+
+.steam {
+  background-color: rgb(74, 30, 30);
+  position: relative;
+  width: 40px;
+  height: 100px;
+  top: -90px;
+  left: 50px;
+}
+
+.tree2 {
+  position: relative;
+  top: -200px;
+  left: 300px;
+}
+.tree3 {
+  position: relative;
+  top: -400px;
+  left: 600px;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-1420px);
+  }
+}
+
+.dino.jump {
+  animation: jump 1.5s ease-out;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.created {
+  position: relative;
+  top: 00px;
+  color: rgb(36, 167, 47);
+  font-family: pixelfont;
+}
+
+.up {
+  width: 100px;
+  height: 50px;
+  position: relative;
+  top: 100px;
+  border-radius: 50px;
+  background-color: rgb(183, 183, 233);
+}
+
+@font-face {
+  font-family: 'pixelfont';
+  src: url(../public/Jersey10-Regular.ttf);
+}
+
+.title {
+  font-size: 150px;
+  font-family: pixelfont;
+  background-color: #725fde;
+  width: 800px;
+  position: relative;
+  top: 100px;
+  border-radius: 20px;
+  text-shadow: 5px 5px rgb(67, 136, 197);
+}
+
+.mouth {
+  position: relative;
+  width: 60px;
+  height: 17px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 10px 10px;
+  left: 20px;
+  top: 8px;
+}
+.leg11 {
+  position: relative;
+  left: 20px;
+  top: -41px;
+}
+.leg22 {
+  position: relative;
+  left: 60px;
+  top: -61px;
+}
+
+.hdino {
+  position: relative;
+  top: -270px;
+  left: 50px;
+}
+.over {
+  font-size: 150px;
+  font-family: pixelfont;
+  background-color: #e05252;
+  width: 800px;
+  position: relative;
+  top: 0px;
+  border-radius: 20px;
+  color: #dc8d05;
+  text-shadow: 5px 5px rgb(67, 136, 197);
+}
+
+.desc {
+  font-size: 50px;
+  font-family: pixelfont;
+  color: #218b0e;
+  width: 800px;
+}
+
+.playb {
+  font-family: pixelfont;
+  width: 100px;
+  height: 50px;
+  font-size: 30px;
+  position: relative;
+  top: -100px;
+  border-radius: 20px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.playb:hover {
+  transform: scale(1.2);
+}
+
+.road {
+  width: 1536px;
+  height: 175px;
+  background-color: #2aac09;
+  position: relative;
+  top: 395px;
+}
+
+.sun {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 1300px;
+  top: 50px;
+  border-radius: 50px;
+  background-color: yellow;
+  animation: moveLeft 20s linear infinite;
+}
+
+.yscore {
+  font-family: pixelfont;
+  font-size: 50px;
+  color: #dc8d05;
+  position: fixed;
+  left: 40vw;
+  top: 450px;
+}
