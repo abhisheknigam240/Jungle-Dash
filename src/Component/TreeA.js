@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 
-const TreeA = forwardRef((props, ref) => (
-    <div ref={ref} >
+const TreeA = forwardRef(({ style }, ref) => (
+    <div ref={ref} style={style}>
         <div className="tree">
             <div className="leaves">
                 <div className="leaf1"></div>
